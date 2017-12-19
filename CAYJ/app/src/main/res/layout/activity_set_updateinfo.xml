@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_navi" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/Smile_TextView_Black"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/add_name"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/et_change_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/input_name"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/Smile_TextView_Black"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/login_pwd"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/et_change_psw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/input_new_pass_word"
+            />
+    </LinearLayout>
+
+</LinearLayout>

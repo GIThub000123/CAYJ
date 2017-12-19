@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_navi" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_seek_home"
+            style="@style/BottomTabStyle"
+            android:text="宠物寻家"
+            android:textColor="@drawable/btn_tab_text_selector"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb_doctor_for_pets"
+            style="@style/BottomTabStyle"
+            android:drawableLeft="@drawable/line"
+            android:text="宠物医务"
+            android:textColor="@drawable/btn_tab_text_selector"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb_pets_maintain"
+            style="@style/BottomTabStyle"
+            android:drawableLeft="@drawable/line"
+            android:text="宠物护理"
+            android:textColor="@drawable/btn_tab_text_selector"
+            android:textSize="16sp" />
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@mipmap/base_horization_line" />
+
+    <cn.bmob.imdemo.view.HorizontalScrollViewPager
+        android:id="@+id/vp_consultappeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </cn.bmob.imdemo.view.HorizontalScrollViewPager>
+
+</LinearLayout>
